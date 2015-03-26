@@ -26,7 +26,7 @@ include_once $systemroot."/../texts/".$GLOBALS["language_module"];
 include_once $systemroot."/languages.php";
 require_once $systemroot."/defaultconfig.php";
 require_once $systemroot.'/connect.php';
-require_once $systemroot."/commonlib/lib/interfacelib.php";
+require_once $systemroot."/inc/interfacelib.php";
 include_once $systemroot."/ui/".$GLOBALS['ui']."/pagetop_minimal.php";
 # record the start time(usec) of script
 
