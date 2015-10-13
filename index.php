@@ -1,4 +1,5 @@
 <?php
+
 ob_start();
 error_reporting(0);
 if (!empty($_SERVER["ConfigFile"]) && is_file($_SERVER["ConfigFile"])) {
@@ -16,18 +17,15 @@ $GLOBALS["pagestats"] = array();
 $GLOBALS["pagestats"]["time_start"] = $now["sec"] * 1000000 + $now["usec"];
 $GLOBALS["pagestats"]["number_of_queries"] = 0;
 
-if (!isset($systemroot)) {
-  $systemroot = dirname(__FILE__).'/..';
-}
-require_once $systemroot.'/init.php';
-require_once $systemroot.'/'.$GLOBALS["database_module"];
-require_once $systemroot."/../texts/english.inc";
-include_once $systemroot."/../texts/".$GLOBALS["language_module"];
-include_once $systemroot."/languages.php";
-require_once $systemroot."/defaultconfig.php";
-require_once $systemroot.'/connect.php';
-require_once $systemroot."/inc/interfacelib.php";
-include_once $systemroot."/ui/".$GLOBALS['ui']."/pagetop_minimal.php";
+require_once dirname(__FILE__).'/../init.php';
+require_once dirname(__FILE__).'/../'.$GLOBALS["database_module"];
+require_once dirname(__FILE__).'/../../texts/english.inc';
+include_once dirname(__FILE__).'/../../texts/'.$GLOBALS["language_module"];
+include_once dirname(__FILE__).'/../languages.php';
+require_once dirname(__FILE__).'/../defaultconfig.php';
+require_once dirname(__FILE__).'/../connect.php';
+require_once dirname(__FILE__).'/../inc/interfacelib.php';
+include_once dirname(__FILE__).'/../ui/'.$GLOBALS['ui'].'/pagetop_minimal.php';
 # record the start time(usec) of script
 
 if (!isset($_GET["topic"]))
