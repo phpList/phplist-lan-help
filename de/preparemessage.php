@@ -33,11 +33,14 @@ so werden die [LISTOWNER]-Platzhalter trotzdem mit den Daten des jeweiligen Besi
 		<td><b>Platzhalter</b></td>
 	</tr>
 <?php
-$req = Sql_query("select name from {$tables["adminattribute"]} order by listorder");
-if (!Sql_Affected_Rows())
-  print '<tr><td colspan=2>-</td></tr>';
-while ($row = Sql_Fetch_Row($req))
-  if (strlen($row[0]) < 20)
-    printf ('<tr><td>%s</td><td>[LISTOWNER.%s]</td></tr>',$row[0],strtoupper($row[0]));
+$req = Sql_query("select name from {$tables['adminattribute']} order by listorder");
+if (!Sql_Affected_Rows()) {
+    print '<tr><td colspan=2>-</td></tr>';
+}
+while ($row = Sql_Fetch_Row($req)) {
+    if (strlen($row[0]) < 20) {
+        printf('<tr><td>%s</td><td>[LISTOWNER.%s]</td></tr>', $row[0], strtoupper($row[0]));
+    }
+}
 ?>
 </table>

@@ -7,9 +7,10 @@ En el campo del mensaje puede utilizar &#171;variables&#187;, que ser&aacute;n s
 print listPlaceHolders();
 
 if (phplistPlugin::isEnabled('rssmanager')) {
-?>
+    ?>
   <p>Puede crear plantillas para los mensajes que se env&iacute;an con elementos RSS. Para ello pinche en la pesta&ntilde;a &#171;Calendario&#187; e indique la frecuencia del mensaje. El mensaje se utilizar&aacute; para enviar la lista de elementos a aquellos usuarios de las listas que hayan escojido esta frecuencia. Debe utilizar el marcador [RSS] en su mensaje para indicar el lugar en el que ir&aacute; la lista de elementos.</p>
-<?php }
+<?php 
+}
 ?>
 
 <p>Para enviar el contenido de una p&aacute;gina web a&ntilde;ada lo que sigue al mensaje:<br/>

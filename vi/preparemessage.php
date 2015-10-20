@@ -14,12 +14,15 @@ H&igrave;nh t&#7913;c th&#7875; hi&#7879;n c&#7911;a h&#7897;p ch&#7913;a  [LIST
 <p>Hi&#7879;n t&#7841;i b&#7841;n c&oacute; th&#7875; d&ugrave;ng c&aacute;c thu&#7897;c t&iacute;nh sau &#273;&acirc;y cho qu&#7843;n tr&#7883; vi&ecirc;n:
 <table border=1><tr><td><b>Attribute</b></td><td><b>Placeholder</b></td></tr>
 <?php
-$req = Sql_query("select name from {$tables["adminattribute"]} order by listorder");
-if (!Sql_Affected_Rows())
-  print '<tr><td colspan=2>None</td></tr>';
+$req = Sql_query("select name from {$tables['adminattribute']} order by listorder");
+if (!Sql_Affected_Rows()) {
+    print '<tr><td colspan=2>None</td></tr>';
+}
 
-while ($row = Sql_Fetch_Row($req))
-  if (strlen($row[0]) < 20)
-    printf ('<tr><td>%s</td><td>[LISTOWNER.%s]</td></tr>',$row[0],strtoupper($row[0]));
+while ($row = Sql_Fetch_Row($req)) {
+    if (strlen($row[0]) < 20) {
+        printf('<tr><td>%s</td><td>[LISTOWNER.%s]</td></tr>', $row[0], strtoupper($row[0]));
+    }
+}
 
 ?>

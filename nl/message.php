@@ -9,11 +9,12 @@
 print listPlaceHolders();
 
 if (ENABLE_RSS) {
-?>
+    ?>
 <p>Je kunt een sjabloon maken voor berichten die worden verzonden met RSS opmaak. Om dit te doen, klik op de "Tijdschema" tab en geef de frequentie van het bericht
    aan. Het bericht zal dan worden gebruikt om de lijst met items naar abonnees op de verzendlijst te verzenden, die deze frequentie hebben ingesteld. 
   Je moet het veld (ook wel: placeholder) [RSS] in je bericht gebruiken om aan te duiden waar de lijst moet komen.</p>
-<?php }
+<?php 
+}
 ?>
 
 <p>Om de inhoud van een webpagina te verzenden, voeg je het volgende toe aan de inhoud van je bericht:<br/>

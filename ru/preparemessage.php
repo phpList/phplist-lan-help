@@ -12,13 +12,16 @@
 <p>На текущий момент заданы следующие атрибуты администратора:
 <table border=1><tr><td><b>Атрибут</b></td><td><b>Метка</b></td></tr>
 <?php
-$req = Sql_query("select name from {$tables["adminattribute"]} order by listorder");
-if (!Sql_Affected_Rows())
-  print '<tr><td colspan=2>Атрибутов администратора нет</td></tr>';
+$req = Sql_query("select name from {$tables['adminattribute']} order by listorder");
+if (!Sql_Affected_Rows()) {
+    print '<tr><td colspan=2>Атрибутов администратора нет</td></tr>';
+}
 
-while ($row = Sql_Fetch_Row($req))
-  if (strlen($row[0]) < 20)
-    printf ('<tr><td>%s</td><td>[LISTOWNER.%s]</td></tr>',$row[0],strtoupper($row[0]));
+while ($row = Sql_Fetch_Row($req)) {
+    if (strlen($row[0]) < 20) {
+        printf('<tr><td>%s</td><td>[LISTOWNER.%s]</td></tr>', $row[0], strtoupper($row[0]));
+    }
+}
 
 ?>
 </p>

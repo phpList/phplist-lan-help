@@ -7,12 +7,13 @@ W polu wiadomości można używać "zmiennych", które zostaną zastąpione prze
 print listPlaceHolders();
 
 if (ENABLE_RSS) {
-?>
+    ?>
   <p>Możesz ustawić szablony wiadomości, które bedą wysyłane z elementami RSS. Aby to zrobić klliknij zakładkę Harmonogram i wkaż
   częstotliwoś wysyłania wiadomości. Wtedy wiadomośc zostanie użyta aby wysłć listę elementów do użytkowników
   na listach, którzy mają ustawioną częstotliwość. Musisz użyć symbolu [RSS] w wiadomości
   w celu okreslenia gdzie lista ma zostać rozesłana.</p>
-<?php }
+<?php 
+}
 ?>
 
 <p>Aby wysłać zawartość strony internetowej, należy dodać następującą treść w wiadomości:<br/>

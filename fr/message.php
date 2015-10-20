@@ -7,12 +7,13 @@ Dans le champ r&eacute;serv&eacute; au texte de votre message, vous pouvez utili
 print listPlaceHolders();
 
 if (phplistPlugin::isEnabled('rssmanager')) {
-?>
+    ?>
 
 <p>Vous pouvez mettre en place des mod&egrave;les de messages pour des articles RSS. Pour ce faire, cliquez sur l\'onglet "Envoi programm&eacute;" et s&eacute;lectionnez la fr&eacute;quence d\'envoi du message. Le message sera ensuite utilis&eacute; pour envoyer la liste des articles aux destinataires sur les listes qui ont choisi cette fr&eacute;quence d\'envoi. Il faut utiliser le code-raccourci [RSS] dans le corps de votre message pour indiquer l\'endroit o&ugrave;
  la liste doit appara&icirc;tre. </p>
 
-<?php }
+<?php 
+}
 ?>
 <p>Pour envoyer les contenus d\'une page web, ajoutez la ligne suivante dans le corps du message :<br/>
 <b>[URL:</b>http://www.exemple.org/chemin/vers/lefichier.html<b>]</b></p>

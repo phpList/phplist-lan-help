@@ -7,21 +7,21 @@
 <?php
 
 if (SEND_ONE_TESTMAIL) {
-
-?>
+    ?>
 
 <p>Eer zal één bericht worden verzonden naar het emailadres dat je hebt ingevoerd. Dit bericht zal in tekstopmaak of HTML-opmaak worden verzonden, afhankelijk van het gekozen profiel.</p>
 
 <?php
-} else {
 
-?>
+} else {
+    ?>
 
 <p><strong>Er zullen twee berichten worden verzonden naar het emailadres dat je hebt ingevoerd.</strong> Het ene bericht zal worden verzonden in de tekst opmaak, het andere in de HTML opmaak.</p>
 
 <p>De abonnees zullen uiteindelijk één bericht ontvangen. De versie die ze zullen ontvangen is afhankelijk van de instellingen in het abonnee profiel.</p>
 
-<?php } ?>
+<?php 
+} ?>
 
 
 

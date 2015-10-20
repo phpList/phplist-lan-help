@@ -12,12 +12,15 @@ El formato de los marcadores [LISTOWNER] es <b>[LISTOWNER.ATRIBUTO]</b><br/>
 <p>Actualmente tiene definidos los siguientes atributos de administrador:
 <table border=1><tr><td><b>Atributo</b></td><td><b>Marcador</b></td></tr>
 <?php
-$req = Sql_query("select name from {$tables["adminattribute"]} order by listorder");
-if (!Sql_Affected_Rows())
-  print '<tr><td colspan=2>None</td></tr>';
+$req = Sql_query("select name from {$tables['adminattribute']} order by listorder");
+if (!Sql_Affected_Rows()) {
+    print '<tr><td colspan=2>None</td></tr>';
+}
 
-while ($row = Sql_Fetch_Row($req))
-  if (strlen($row[0]) < 20)
-    printf ('<tr><td>%s</td><td>[LISTOWNER.%s]</td></tr>',$row[0],strtoupper($row[0]));
+while ($row = Sql_Fetch_Row($req)) {
+    if (strlen($row[0]) < 20) {
+        printf('<tr><td>%s</td><td>[LISTOWNER.%s]</td></tr>', $row[0], strtoupper($row[0]));
+    }
+}
 
 ?>

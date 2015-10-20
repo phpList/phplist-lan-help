@@ -7,11 +7,12 @@ In het bericht veld kan u "variabelen" gebruiken, die zullen worden vervangen me
 print listPlaceHolders();
 
 if (ENABLE_RSS) {
-?>
+    ?>
   <p>U kan een templates aanmaken voor berichten die worden verzonden met RSS items. Om dit te doen, klik op de "Tijdsschema" tab en duid de frequentie 
   voor het bericht aan. Het bericht zal dan worden gebruikt om de lijst met items naar gebruikers op de lijst te verzenden, die deze frequentie hebben ingesteld. 
   U moet het veld (of placeholder) [RSS] in je bericht gebruiken om aan te duiden waar de lijst moet komen.</p>
-<?php }
+<?php 
+}
 ?>
 
 <p>Om de inhoud van een webpagina te verzenden, voeg de volgende toe aan de inhoud van je bericht:<br/>

@@ -7,9 +7,10 @@ No campo mensagem voc&ecirc; pode usar "vari&aacute;veis", as quais ser&atilde;o
 print listPlaceHolders();
 
 if (phplistPlugin::isEnabled('rssmanager')) {
-?>
+    ?>
   <p>Voc&ecirc; pode definir modelos para as mensagens que possuem elementos RSS. Para fazer isso clique na orelha "Scheduling" e indique a frequ&ecirc;ncia para a mensagem. A mensagem ser&aacute; usada para enviar uma lista de &iacute;tens para os usu&acute;rios das listas, que tiveram a frequ&ecirc;ncia configurada. Voc&ecirc; precisa usar os marcadores [RSS] nas suas mensagens para identificar para quais lista deve ser enviadas.</p>
-<?php }
+<?php 
+}
 ?>
 
 <p>Para enviar o conte&uacute;do de uma p&aacute;gina web, adicione o c&oacute;digo abaixo no conte&uacute;do da mensagem::<br/>

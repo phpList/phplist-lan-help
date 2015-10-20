@@ -8,7 +8,7 @@ specifying different content for individuals who are not subscribed to your news
 <?php
 
 ## for translators, you can translater the word "Configuration" below
-echo PageLink2('configure&id=messagefooter','Configuration');
+echo PageLink2('configure&id=messagefooter', 'Configuration');
 ?>
  </p>
 
@@ -28,7 +28,7 @@ echo PageLink2('configure&id=messagefooter','Configuration');
 <div class="suggestion">
 <pre>
 --
-&lt;h2&gt;This message has been sent to [EMAIL] by <?php echo getConfig('message_from_name').' '. getConfig('admin_address')?>&lt;/h2&gt;
+&lt;h2&gt;This message has been sent to [EMAIL] by <?php echo getConfig('message_from_name').' '.getConfig('admin_address')?>&lt;/h2&gt;
 
 &lt;h3&gt;&lt;a href="[UNSUBSCRIBEURL]"&gt;Unsubscribe&lt;/a&gt;&lt;/h3&gt;
 &lt;h3&gt;&lt;a href="[PREFERENCESURL]"&gt;Change preferences&lt;/a&gt;&lt;/h3&gt;

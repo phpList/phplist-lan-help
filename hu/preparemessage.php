@@ -25,12 +25,15 @@ A [LISTOWNER] helyőrzők formátuma <b>[LISTOWNER.ATTRIBUTE]</b><br/>
 <p>Ön jelenleg a következő, meghatározott adminisztrátori tulajdonságokat használhatja:
 <table border=1><tr><td><b>Tulajdonság</b></td><td><b>Helyőrző</b></td></tr>
 <?php
-$req = Sql_query("select name from {$tables["adminattribute"]} order by listorder");
-if (!Sql_Affected_Rows())
-  print '<tr><td colspan=2>Nincs</td></tr>';
+$req = Sql_query("select name from {$tables['adminattribute']} order by listorder");
+if (!Sql_Affected_Rows()) {
+    print '<tr><td colspan=2>Nincs</td></tr>';
+}
 
-while ($row = Sql_Fetch_Row($req))
-  if (strlen($row[0]) < 20)
-    printf ('<tr><td>%s</td><td>[LISTOWNER.%s]</td></tr>',$row[0],strtoupper($row[0]));
+while ($row = Sql_Fetch_Row($req)) {
+    if (strlen($row[0]) < 20) {
+        printf('<tr><td>%s</td><td>[LISTOWNER.%s]</td></tr>', $row[0], strtoupper($row[0]));
+    }
+}
 
 ?>

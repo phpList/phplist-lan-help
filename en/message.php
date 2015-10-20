@@ -15,12 +15,13 @@ In the message field you can use "variables", which will be replaced by the appr
 print listPlaceHolders();
 
 if (phplistPlugin::isEnabled('rssmanager')) {
-?>
+    ?>
   <p>You can set up templates for messages that go out with RSS items. In order to do that click the "Scheduling" tab and indicate
   the frequency for the message. The message will then be used to send the list of items to users
   on the lists, who have that frequency set. You need to use the placeholder [RSS] in your message
   to identify where the list needs to go.</p>
-<?php }
+<?php 
+}
 ?>
 
 <p>To send the contents of a webpage, add the following to the content of the message:<br/>

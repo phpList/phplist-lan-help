@@ -10,12 +10,15 @@ Le format des codes-raccourcis [LISTOWNER] est le suivant:  <b>[LISTOWNER.ATTRIB
 <p>Vous avez d&eacute;fini les attributs pour administrateurs suivants:
 <table border=1><tr><td><b>Attribut</b></td><td><b>Code-raccourci</b></td></tr>
 <?php
-$req = Sql_query("select name from {$tables["adminattribute"]} order by listorder");
-if (!Sql_Affected_Rows())
-  print '<tr><td colspan=2>Aucun</td></tr>';
+$req = Sql_query("select name from {$tables['adminattribute']} order by listorder");
+if (!Sql_Affected_Rows()) {
+    print '<tr><td colspan=2>Aucun</td></tr>';
+}
 
-while ($row = Sql_Fetch_Row($req))
-  if (strlen($row[0]) < 20)
-    printf ('<tr><td>%s</td><td>[LISTOWNER. %s]</td></tr>',$row[0],strtoupper($row[0]));
+while ($row = Sql_Fetch_Row($req)) {
+    if (strlen($row[0]) < 20) {
+        printf('<tr><td>%s</td><td>[LISTOWNER. %s]</td></tr>', $row[0], strtoupper($row[0]));
+    }
+}
 
 ?>

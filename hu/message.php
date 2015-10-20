@@ -7,12 +7,13 @@ Az üzenet mezőben használhat "változókat", melyek lecserélésre kerülnek 
 print listPlaceHolders();
 
 if (ENABLE_RSS) {
-?>
+    ?>
   <p>Az RSS-elemekkel kimenő üzenetekhez sablonokat adhat meg. Végrehajtásához kattintson az "Ütemterv" fülre, s adja meg
   az üzenet gyakoriságát. Az üzenet aztán az elemlista felhasználóknak történő küldésére kerül felhasználásra
   a listákon, akik azt a gyakoriságot adták meg. Az [RSS] helyőrzőt kell használnia az üzenetben
   annak beazonosításához, hogy hova kerüljön a lista.</p>
-<?php }
+<?php 
+}
 ?>
 
 <p>Egy weboldal tartalmának küldéséhez tegye be a következőt az üzenet tartalmába:<br/>

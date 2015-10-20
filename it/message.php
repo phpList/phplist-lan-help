@@ -15,9 +15,10 @@ Nel campo del messaggio potete usare delle "variabili" che saranno sostituite da
 print listPlaceHolders();
 
 if (phplistPlugin::isEnabled('rssmanager')) {
-?>
+    ?>
  <p>Potete impostare dei modelli per i messaggi che vengono spediti con elementi RSS. Per fare questo clicca su "Programmazione" e indica la frequenza per il messaggio. Il messaggio sar&agrave; poi usato per spedire la lista degli elementi agli utenti sulle liste che hanno impostato questa frequenza. Devete usare il segnalibro [RSS] nel messaggio per definire dove deve andare la lista.</p>
-<?php }
+<?php 
+}
 ?>
 <p>Per spedire il contenuto di una pagina web, aggiungete i seguenti codici al messaggio:<br/>
 <b>[URL:</b>http://www.esempio.org/nome_file.html<b>]</b></p>

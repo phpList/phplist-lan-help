@@ -6,7 +6,7 @@
 <?php
 
 ## for translators, you can translater the word "Configuration" below
-echo PageLink2('configure&id=messagefooter','Конфигурации');
+echo PageLink2('configure&id=messagefooter', 'Конфигурации');
 ?>
 </p>
 
@@ -26,7 +26,7 @@ echo PageLink2('configure&id=messagefooter','Конфигурации');
 <div class="suggestion">
 <pre>
 --
-&lt;h2&gt;Это письмо отправлено на адрес [EMAIL] от <?php echo getConfig('message_from_name').' '. getConfig('admin_address')?>&lt;/h2&gt;
+&lt;h2&gt;Это письмо отправлено на адрес [EMAIL] от <?php echo getConfig('message_from_name').' '.getConfig('admin_address')?>&lt;/h2&gt;
 
 &lt;h3&gt;&lt;a href="[UNSUBSCRIBEURL]"&gt;Отписаться&lt;/a&gt;&lt;/h3&gt;
 &lt;h3&gt;&lt;a href="[PREFERENCESURL]"&gt;Изменить параметры учётной записи&lt;/a&gt;&lt;/h3&gt;

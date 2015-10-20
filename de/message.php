@@ -10,8 +10,8 @@ in den Nachrichtentext ein, an welcher der Vorname des jeweiligen Empf&auml;nger
 <?php
 print listPlaceHolders();
 
-if (phplistPlugin::isEnabled('rssmanager')) { 
-?>
+if (phplistPlugin::isEnabled('rssmanager')) {
+    ?>
   <p>Sie k&ouml;nnen Templates definieren f&uuml;r Nachrichten, die Meldungen aus RSS-Feeds enthalten.
   Zu diesem Zweck wechseln Sie zuerst auf das Register "Termine" und definieren dort,
   wie h&auml;ufig eine Nachricht mit den neuen Meldungen aus dem RSS-Feed verschickt werden soll.
@@ -19,7 +19,8 @@ if (phplistPlugin::isEnabled('rssmanager')) {
   welche die entsprechende Frequenz gew&auml;hlt haben.
   Verwenden Sie anschliessend den Platzhalter [RSS] in Ihrer Nachricht,
   um die RSS-Meldungen an der gew&uuml;nschten Stelle einzuf&uuml;gen.</p>
-<?php }
+<?php 
+}
 ?>
 
 <p>Um eine ganze Web-Seite als Nachricht zu versenden benutzen Sie den folgenden Platzhalter:<br/>

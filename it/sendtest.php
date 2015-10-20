@@ -8,21 +8,21 @@
 <?php
 
 if (SEND_ONE_TESTMAIL) {
-
-?>
+    ?>
 
 <p>Riceverete un messaggio all'indirizzo indicato. Questo messaggio sar&agrave; in formato testo o HTML, a seconda delle impostazioni del profilo.</p>
 
 <?php
-} else {
 
-?>
+} else {
+    ?>
 
 <p><strong>Riceverete due messaggi all'indirizzo inserito.</strong>Uno di essi sar&agrave; la <strong>versione testo</strong> del vostro messaggio e l'altro la <strong>versione HTML</strong>.</p>
 
 <p>I vostri utenti riceveranno solo un messaggio. La versione che gli arriver&agrave; dipende dalle impostazioni del profilo dell'utente.</p>
 
-<?php } ?>
+<?php 
+} ?>
 
 
 
