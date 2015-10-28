@@ -9,21 +9,21 @@ pa možda neće biti primljena na isti način za svakog od njih, tj. da neće bi
 <?php
 
 if (SEND_ONE_TESTMAIL) {
-
-?>
+    ?>
 
 <p>Primićete jednu poruku na adresi koju ste uneli. Ova poruka će biti u tekstualnom ili HTML formatu, u zavisnosti od podešavanja odgovarajućeg profila.</p>
 
 <?php
-} else {
 
-?>
+} else {
+    ?>
 
 <p><strong>Primićete dve poruke na adresi koju ste uneli.</strong> jedna od njih će biti <strong>tekstualna verzija</strong> vaše kampanje, a druga će biti <strong>HTML verzija</strong> vaše kampanje.</p>
 
 <p>Vaši pretplatnici će primiti samo jednu poruku. Primljena verzija će zavisiti od (tekst ili HTML) podešavanja pretplatničkog profila.</p>
 
-<?php } ?>
+<?php 
+} ?>
 
 
 

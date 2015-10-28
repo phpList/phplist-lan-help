@@ -8,7 +8,7 @@ određivanje drugačijeg sadržaja za pojedince koji nisu pretplaćeni na vaš b
 <?php
 
 ## for translators, you can translater the word "Configuration" below
-echo PageLink2('configure&id=messagefooter','Konfiguraciji');
+echo PageLink2('configure&id=messagefooter', 'Konfiguraciji');
 ?>
  </p>
 
@@ -28,7 +28,7 @@ echo PageLink2('configure&id=messagefooter','Konfiguraciji');
 <div class="suggestion">
 <pre>
 --
-&lt;h2&gt;Ova poruka je poslata na [EMAIL] od <?php echo getConfig('message_from_name').' '. getConfig('admin_address')?>&lt;/h2&gt;
+&lt;h2&gt;Ova poruka je poslata na [EMAIL] od <?php echo getConfig('message_from_name').' '.getConfig('admin_address')?>&lt;/h2&gt;
 
 &lt;h3&gt;&lt;a href="[UNSUBSCRIBEURL]"&gt;Odjava&lt;/a&gt;&lt;/h3&gt;
 &lt;h3&gt;&lt;a href="[PREFERENCESURL]"&gt;Promeni podešavanja&lt;/a&gt;&lt;/h3&gt;
