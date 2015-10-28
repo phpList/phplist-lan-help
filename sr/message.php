@@ -15,12 +15,13 @@ U polju za poruku možete koristiti "promenljive", koje će biti zamenjene sa od
 print listPlaceHolders();
 
 if (phplistPlugin::isEnabled('rssmanager')) {
-?>
+    ?>
   <p>Možete podesiti obrasce za poruke koje se šalju sa RSS stavkama. Da bi to uradili, kliknite na "Raspored slanja" jezičak i naznačite
   učestalost poruke. Poruka će se onda koristiti za slanje liste stavki korisnicima
   liste, koji imaju podešenu tu učestalost. Morate koristiti [RSS] zamenski tekst u vašoj poruci
   da bi identifikovali gde lista treba da ide.</p>
-<?php }
+<?php 
+}
 ?>
 
 <p>Da pošaljete sadržaj veb strane, dodajte sledeće u  tekst vaše poruke:<br/>
