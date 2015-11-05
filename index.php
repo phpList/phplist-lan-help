@@ -13,7 +13,7 @@ if (!empty($_SERVER['ConfigFile']) && is_file($_SERVER['ConfigFile'])) {
     exit;
 }
 $now = gettimeofday();
-$GLOBALS['pagestats'] = [];
+$GLOBALS['pagestats'] = array();
 $GLOBALS['pagestats']['time_start'] = $now['sec'] * 1000000 + $now['usec'];
 $GLOBALS['pagestats']['number_of_queries'] = 0;
 
