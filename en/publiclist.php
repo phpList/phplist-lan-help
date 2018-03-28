@@ -1,3 +1,1 @@
-<p>Mark Public or Private – Choosing whether a list is public or private determines if the list will show on the subscribe page. <br>
-    Public lists will appear on the “Subscribe Page.”
-</p>
+<p>Mark Public or Private – Choosing whether a list is public or private determines whether the list can be shown on subscribe pages, and if it will be listed on the default subscribe page with all others.</p>
