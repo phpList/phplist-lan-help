@@ -55,7 +55,6 @@ if ($topic) {
 <body>
 <!-- content -->
 <?php
-print "<h3>phplist Help: $topic</h3>";
 if ($include) {
     include $include;
 } else {
