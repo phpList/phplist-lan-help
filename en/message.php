@@ -23,7 +23,20 @@ if (phplistPlugin::isEnabled('rssmanager')) {
 <?php 
 }
 ?>
-
+<p>You can also use several system and config placeholders such as:
+<ul>
+<li>[EMAIL]</li> 
+<li>[CONFIRMED]</li>
+<li>[BLACKLISTED]</li>
+<li>[BOUNCECOUNT]</li>
+<li>[ENTERED]</li>
+<li>[MODIFIED]</li>
+<li>[UNIQID]</li>
+<li>[HTMLEMAIL]</li>
+<li>[DOMAIN]</li>
+<li>[WEBSITE]</li>
+</ul> 
+</p>
 <p>To send the contents of a webpage, add the following to the content of the message:<br/>
 <b>[URL:</b>http://www.example.org/path/to/file.html<b>]</b></p>
 <p>You can include basic user information in this URL, not attribute information:</br>
