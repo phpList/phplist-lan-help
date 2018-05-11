@@ -4,7 +4,7 @@
 <p>Enter a valid email address in the box and click the button. 
 <i>The address you enter needs to be a subscriber in the database.</i></p>
 <p>Sending a test is strongly advised to make sure that your campaign arrives fine. However, many of your subscribers will use different applications to view their email
-so it may not arrive in the same way for each of them, as you receive it. The best way to make sure that your campaign is read and visible to all your subscribers is to use basic and plain HTML in your campaigns.</p>
+so it may not arrive in the same way for each of them, as you receive it. The best way to make sure that your campaign is read and visible to all your subscribers is to use basic and plain HTML in your campaigns. Please consider that messages sent using this option can not be forwarded using the [FORWARDURL] in the footer, that because this is still a draft campaign. </p>
 
 <?php
 
