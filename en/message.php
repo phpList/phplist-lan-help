@@ -23,9 +23,24 @@ if (phplistPlugin::isEnabled('rssmanager')) {
 <?php 
 }
 ?>
+
+<p> Some place holders that may be useful when creating a template for use in phpList:
+<ul>
+<li>[SUBJECT] - adds the subject of the email within the newsletter text;</li>
+<li>[CONTENT] - a mandatory placeholder for the message's content (body)that will be entered;</li>
+<li>[FOOTER] - The message footer;</li>
+<li>[SIGNATURE] - prints the phpList image signature;</li>
+<li>[FORWARDURL] - is replaced with the personalised URL only;</li>
+<li>[PREFERENCESURL] - allows the recipient to edit their subscribe preferences, for example update their email or the number of lists they belong to -- <strong>This essentially allows them to maintain your list up to date for you and is an invaluable feature</strong>;</li>
+<li>[UNSUBSCRIBEURL] - a mandatory placeholder that allows the recipient to totally unsubscribe from all your lists;</li>
+<li>[DOMAIN] - Prints your domain as listed in your configuration settings;</li>
+<li>[EMAIL] - Prints the subscribers email address;</li>
+<li>[LOGO] - Prints the logo added on your settings.</li>
+</ul>
+</p>
+
 <p>You can also use system placeholders such as:
 <ul>
-<li>[EMAIL]</li> 
 <li>[CONFIRMED]</li>
 <li>[BLACKLISTED]</li>
 <li>[BOUNCECOUNT]</li>
@@ -33,7 +48,6 @@ if (phplistPlugin::isEnabled('rssmanager')) {
 <li>[MODIFIED]</li>
 <li>[UNIQID]</li>
 <li>[HTMLEMAIL]</li>
-<li>[DOMAIN]</li>
 <li>[WEBSITE]</li>
 </ul> 
 </p>
