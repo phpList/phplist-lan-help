@@ -1,4 +1,4 @@
-You can use three different methods to set the from line:
+You can use three different methods to set the from line and reply to:
 <ul>
 <li>One word: this will be reformatted as &lt;the word&gt;@<?php echo $domain?>
 <br>For example: <b>information</b> will become <b>information@<?php echo $domain?></b>
